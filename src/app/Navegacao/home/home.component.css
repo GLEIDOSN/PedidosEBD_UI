@@ -1,0 +1,12 @@
+/* Cards */
+.card-img-top {
+ padding-top: 20px;
+ height: 100px;
+ width: 253px;
+ align-self: center;
+}
+
+/* Texto principal */
+.col-lg-2 {
+  padding-top: 30px;
+}
