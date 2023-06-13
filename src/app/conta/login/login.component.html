@@ -1,0 +1,45 @@
+<div class="container main-container">
+  <form novalidate (ngSubmit)="fazerLogin()" [formGroup]="loginForm">
+
+    <div class="alert alert-danger" *ngIf="errors.length > 0">
+      <h4 id="" msgRetorno>Opa! Alguma coisa não deu certo:</h4>
+      <ul>
+        <li *ngFor="let error of errors">{{ error }}</li>
+      </ul>
+    </div>
+
+    <div class="form-group">
+      <label>Usuário</label>
+      <div class="form-group mb-3">
+        <input
+          class="form-control"
+          id="usuario"
+          type="text"
+          formControlName="usuario"
+        />
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>Senha</label>
+      <div class="form-group mb-3">
+        <input
+          class="form-control"
+          id="senha"
+          type="password"
+          formControlName="senha"
+        />
+      </div>
+    </div>
+
+    <br />
+
+    <div class="form-group">
+      <div class="d-grid gap-2 col-14">
+        <button class="btn btn-success btn-lg" id="entrar" type="submit">
+          Entrar
+        </button>
+      </div>
+    </div>
+  </form>
+</div>

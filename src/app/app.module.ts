@@ -5,7 +5,6 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { FormsModule } from '@angular/forms';
 import { NavegacaoModule } from './Navegacao/navegacao.module';
 
 @NgModule({
@@ -15,7 +14,6 @@ import { NavegacaoModule } from './Navegacao/navegacao.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule,
     NavegacaoModule,
     NgbModule
   ],
